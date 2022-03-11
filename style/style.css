@@ -129,7 +129,7 @@ body{
   background-color: #014E56;
   background-image: url("../img/Group\ 8\ \(5\).png");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: calc(50% + 583px)bottom;
 }
 
 .hero-wrapper{
@@ -147,7 +147,7 @@ body{
 }
 
 .hero-text-about{
-  width: 600px;
+  max-width: 600px;
   font-size: 18px;
   line-height: 28px;
   color: #FFFFFF;
@@ -169,7 +169,18 @@ body{
   background-color: #012F34;
   background-image: url("../img/clients-bg.png");
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: calc(50% + -530px)top;
+}
+
+.ham-btn{
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+.hamburg-btn{
+  display: block;
+  width: 20px;
+  height: 17px;
 }
 
 .sec-client-box{
@@ -184,18 +195,21 @@ body{
   color: #FFFFFF;
 }
 
-.font-img{
-  width: 1000px;
-  height: 45px;
-  margin-top: 50px;
+.clients-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
   padding: 0;
+  list-style-type: none;
+
 }
 
 .main-section{
   background-color: #014E56;
   background-image: url(../img/Group\ 8\ \(1\).png);
   background-repeat: no-repeat;
-  background-position: -8px 100px;
+  background-position: calc(50% + -585px)100px;
 }
 
 .site-hero{
@@ -204,13 +218,13 @@ body{
   justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 250px;
-  background-image: url(../img/Group\ 7.png);
+  background-image: url("../img/Group\ 7.png");
   background-repeat: no-repeat;
-  background-position: 590px 470px;
+  background-position: right bottom;
 }
 
 .hero-heading{
-  width: 530px;
+  max-width: 530px;
   margin: 0;
   padding-top: 20px;
   font-weight: bold;
@@ -224,7 +238,7 @@ body{
 }
 
 .hero-text{
-  width: 400px;
+  max-width: 400px;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
@@ -242,9 +256,9 @@ body{
 
 .section1{
   background-color: #012F34;
-  background-image: url(../img/Group\ 8\ \(2\).png);
+  background-image: url("../img/Group\ 8\ \(2\).png");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: calc(50% + 580px)530px;
 }
 
 .build-manage{
@@ -256,7 +270,7 @@ body{
 }
 
 .bm-h3text{
-  width: 600px;
+  max-width: 600px;
   font-weight: bold;
   font-size: 40px;
   line-height: 48px;
@@ -317,13 +331,14 @@ body{
   padding-bottom: 150px;
   background-image: url("../img/Group\ 8\ Copy\ \(1\).png"), url("../img/Group\ 8\ \(6\).png");
   background-repeat: no-repeat;
-  background-position: left top, right bottom;
+  /* background-position: left top, right bottom; */
+  background-position: calc(50% + -560px)0px, calc(50% + 533px)650px;
 
 }
 
 
 .sec3-head{
-  width: 930px;
+  max-width: 930px;
   margin: 0;
   font-weight: bold;
   font-size: 48px;
@@ -353,7 +368,7 @@ body{
 }
 
 .img-quote{
-  margin-bottom: 80px;
+  margin-top: 70px;
   margin-left: -25px;
   position: absolute;
   top: 1770px;
@@ -396,7 +411,7 @@ body{
   background-color: #F67E7E;
   background-image: url(../img/Group\ 8\ \(3\).png);
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: calc(50% + -535px)56px;
 }
 
 .sec3-contact-us{
@@ -467,16 +482,16 @@ footer{
   color: #F67E7E;
 }
 
-
 .qwe{
-  width: 170px;
-  font-weight: 600;
+  max-width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   font-size: 15px;
   line-height: 25px;
   color: #FFFFFF;
-  mix-blend-mode: normal;
   opacity: 0.6;
-  margin: 0;
+  margin-left: 78px;
   padding: 0;
 }
 
@@ -518,7 +533,7 @@ footer{
   position: relative;
   background-image: url("../img/Group\ 8.png"), url("../img/Group\ 8\ Copy.png");
   background-repeat: no-repeat;
-  background-position: left top, right bottom;
+  background-position: calc(50% + -583px)top, calc(50% + 565px)bottom;
 }
 
 .container{
@@ -629,7 +644,7 @@ footer{
   background-color: #014E56;
   background-image: url("../img/Group\ 8\ \(4\).png"),url("../img/Group\ 7\ \(1\).png");
   background-repeat: no-repeat;
-  background-position: left top, right bottom;
+  background-position: calc(50% + -583px)top, calc(50% + 582px)bottom;
 }
 
 .site-form-box{
@@ -670,7 +685,6 @@ footer{
 
 .part-1{
   margin-right: 15px;
-  margin-top: 35px;
 }
 
 .form-txt{
@@ -736,7 +750,9 @@ footer{
   border-radius: 24px;
 }
 
-
+.site-footer1{
+  display: none;
+}
 
 
 
